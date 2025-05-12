@@ -260,7 +260,10 @@ const TeacherAssignments = () => {
                   textTransform: "none",
                   width: "350px",
                 }}
-                onClick={() => window.open(assignment.fileURL, "_blank")}
+                onClick={
+                  () => window.open(assignment.fileURL, "_blank")
+                  // console.log(assignment.fileURL)
+                }
               >
                 View Assignment
               </Button>
